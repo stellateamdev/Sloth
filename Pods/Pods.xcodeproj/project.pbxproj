@@ -1,0 +1,892 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		01A41FCDD8753D67376224A2C47E4C99 /* PaymentQueueController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4150561CD837E1794B7B5FF56D353DBA /* PaymentQueueController.swift */; };
+		10CE8CC329D5DF4BC8E9E152D71EFEDD /* InAppReceiptRefreshRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC40F6D34CF34014382C687D09DFB82 /* InAppReceiptRefreshRequest.swift */; };
+		11A8295A71537182A56AA09FD68F2B72 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		166A506B877227A181738FD106129F2B /* Pods-PuzzleUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BC84CA3D52ADBA4CD797CC5AD12D2A3D /* Pods-PuzzleUITests-dummy.m */; };
+		2993F9688BD0F13E089B6CE6FDEC0DA9 /* InAppProductQueryRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8889AAD0CFFD79D3C04C41C5275DF31 /* InAppProductQueryRequest.swift */; };
+		2B129AD89E56C4AB460E00D1EFAF77FB /* SwiftyStoreKit+Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = 828ED662D4314413AA1E6CAC762173AE /* SwiftyStoreKit+Types.swift */; };
+		2BD6E9D83C48E829E80FD024FEF64B74 /* OS.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1A9BC04C58B644FF110C5D74DC0976 /* OS.swift */; };
+		38673872766C4B5CE0E7D7D03A66CF6A /* SwiftyStoreKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E372F858A09D43D16003E884D6965166 /* SwiftyStoreKit-dummy.m */; };
+		3B742796926AAC948F25C9B6D27FC26D /* ProductsInfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF9B0724332FCE0C1392F203F6E0598 /* ProductsInfoController.swift */; };
+		3BB74787FAB3A4E9C4EDD77D594E68DA /* Pods-Puzzle-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E92BD06C11E2636196D932E54883ED0F /* Pods-Puzzle-dummy.m */; };
+		3E0399CC340E1FEBA1AC89416D265C2D /* Pods-PuzzleTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 61650A059351273281DF9461584109E2 /* Pods-PuzzleTests-dummy.m */; };
+		43FA4A709C60DC60906EF79BB0610299 /* Pods-PuzzleTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E18BAAA2423326BD72D80CC493589AC /* Pods-PuzzleTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4781D268F943D7A7BCD0ABD8D907326A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		48AA10847E1C5A9B2CEDD80D9A4F351A /* AppleReceiptValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1968F40D7D4E28418E54A4CB37EBCCE3 /* AppleReceiptValidator.swift */; };
+		69C00B73808EE8A7115231ECD8FA9C83 /* Pods-PuzzleUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A6C03E4B1F77EF062E068233C1FE824 /* Pods-PuzzleUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		773675DC8A6601F4446D552A68B994FA /* RestorePurchasesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09E5AD3410F4E6B1B36FCF89734A598 /* RestorePurchasesController.swift */; };
+		87B0975F3CCE8194A48F730CABFA88B3 /* PaymentsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F6681C1FD0EE179B7D880A46762AB7E /* PaymentsController.swift */; };
+		AA678EB71883495B452ED9FDB8B3EA18 /* CompleteTransactionsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0D417213DBBC4411A4154D7C651230 /* CompleteTransactionsController.swift */; };
+		BCC98E6F4D865329B9F97CF43C7B77CB /* SwiftyStoreKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A85F8C89CC2FE5D425435C300BF696B9 /* SwiftyStoreKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D5359B009A0005D3CF1EE841B7615E3E /* SKProduct+LocalizedPrice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584377585B68A8124FA003F18C13BCEC /* SKProduct+LocalizedPrice.swift */; };
+		D9DCF7245E0862E5A5D95EB30230A8EB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		E0A1EE7FAE6F775A2CE1548E5EDB5B2A /* SwiftyStoreKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F9FC3701650F5859A007AE92ECE515 /* SwiftyStoreKit.swift */; };
+		E0AFB259F312AD81723D2EED5D4AE951 /* Pods-Puzzle-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 37101DE5BD6D27D1F895E2277194A06C /* Pods-Puzzle-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E3783E2EB33AEBE8DA79F7CAB7D5FE0F /* InAppReceipt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E9ED36AFEEB1E03BBD6305217F6C316 /* InAppReceipt.swift */; };
+		E5FA27E8062F038059F62E58A8E254F5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E1F21E02C7679A2BAEE491287609BD34 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 896A537C74EDC671A9CBC725CF1B453D;
+			remoteInfo = SwiftyStoreKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00998C9C09C67D6A2D51166F153FB4AB /* Pods-PuzzleUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PuzzleUITests-frameworks.sh"; sourceTree = "<group>"; };
+		033CB19340B51696FC152EAF4D80AB8E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		09F09E0966A13B5E50EE94D9189B0E13 /* Pods-PuzzleUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PuzzleUITests-resources.sh"; sourceTree = "<group>"; };
+		1708B34E965AE56E28C2B2A027404CE3 /* Pods-Puzzle.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Puzzle.release.xcconfig"; sourceTree = "<group>"; };
+		1968F40D7D4E28418E54A4CB37EBCCE3 /* AppleReceiptValidator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AppleReceiptValidator.swift; path = SwiftyStoreKit/AppleReceiptValidator.swift; sourceTree = "<group>"; };
+		1C0D417213DBBC4411A4154D7C651230 /* CompleteTransactionsController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CompleteTransactionsController.swift; path = SwiftyStoreKit/CompleteTransactionsController.swift; sourceTree = "<group>"; };
+		2292D2875ABB66B950045ECE1725EF19 /* Pods-PuzzleUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PuzzleUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		2ACFD85B3710DF859A8F35232A45F8CE /* Pods-PuzzleTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PuzzleTests-frameworks.sh"; sourceTree = "<group>"; };
+		318C9A03EE311609CC05BC9FBE281A6E /* Pods-PuzzleUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-PuzzleUITests.modulemap"; sourceTree = "<group>"; };
+		35420F0F3E197E3AFFB5412AF216C04F /* Pods-PuzzleTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PuzzleTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		362C3E089C67218E7B241AA6CEF11D04 /* Pods-PuzzleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PuzzleTests.debug.xcconfig"; sourceTree = "<group>"; };
+		36628A081A3D86B42DF2BE40932D5D0A /* Pods-Puzzle-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Puzzle-acknowledgements.plist"; sourceTree = "<group>"; };
+		36CAE54A2B3168986E84E44F724D0EEA /* Pods-PuzzleUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PuzzleUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		37101DE5BD6D27D1F895E2277194A06C /* Pods-Puzzle-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Puzzle-umbrella.h"; sourceTree = "<group>"; };
+		3A6C03E4B1F77EF062E068233C1FE824 /* Pods-PuzzleUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PuzzleUITests-umbrella.h"; sourceTree = "<group>"; };
+		3DF9B0724332FCE0C1392F203F6E0598 /* ProductsInfoController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ProductsInfoController.swift; path = SwiftyStoreKit/ProductsInfoController.swift; sourceTree = "<group>"; };
+		4150561CD837E1794B7B5FF56D353DBA /* PaymentQueueController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PaymentQueueController.swift; path = SwiftyStoreKit/PaymentQueueController.swift; sourceTree = "<group>"; };
+		45118D96DA2F7121387F4CF404FB3202 /* Pods-PuzzleUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PuzzleUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		47D32C9D3B59E1A2B09D96EEEEC017D5 /* Pods-Puzzle.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Puzzle.debug.xcconfig"; sourceTree = "<group>"; };
+		4E18BAAA2423326BD72D80CC493589AC /* Pods-PuzzleTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PuzzleTests-umbrella.h"; sourceTree = "<group>"; };
+		5363D8D3D9C24BAA2D2E959E62D74FFD /* Pods-PuzzleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PuzzleTests.release.xcconfig"; sourceTree = "<group>"; };
+		563FEE32ACDECF77CF07DFAF237B1CC0 /* Pods-Puzzle.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Puzzle.modulemap"; sourceTree = "<group>"; };
+		5777D7076AAEB978CE3B120BE9830C0B /* Pods-PuzzleTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-PuzzleTests.modulemap"; sourceTree = "<group>"; };
+		584377585B68A8124FA003F18C13BCEC /* SKProduct+LocalizedPrice.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SKProduct+LocalizedPrice.swift"; path = "SwiftyStoreKit/SKProduct+LocalizedPrice.swift"; sourceTree = "<group>"; };
+		61650A059351273281DF9461584109E2 /* Pods-PuzzleTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PuzzleTests-dummy.m"; sourceTree = "<group>"; };
+		641CB69EC8E2D4823EBF10B3D7A69FB7 /* Pods-PuzzleTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PuzzleTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		75661FAABF231A439C34F9787AE0F4BC /* SwiftyStoreKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftyStoreKit.framework; path = SwiftyStoreKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		76CAD1248CDF552E06B0F2F9718ACB00 /* Pods-PuzzleUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PuzzleUITests.release.xcconfig"; sourceTree = "<group>"; };
+		828ED662D4314413AA1E6CAC762173AE /* SwiftyStoreKit+Types.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SwiftyStoreKit+Types.swift"; path = "SwiftyStoreKit/SwiftyStoreKit+Types.swift"; sourceTree = "<group>"; };
+		86F7FADF8AAE8767CA8A5C5B5E47C9C3 /* Pods-Puzzle-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Puzzle-resources.sh"; sourceTree = "<group>"; };
+		8F6681C1FD0EE179B7D880A46762AB7E /* PaymentsController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PaymentsController.swift; path = SwiftyStoreKit/PaymentsController.swift; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9E9ED36AFEEB1E03BBD6305217F6C316 /* InAppReceipt.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InAppReceipt.swift; path = SwiftyStoreKit/InAppReceipt.swift; sourceTree = "<group>"; };
+		9F3A2744AD9E67B613A4AE0958B00039 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A09E5AD3410F4E6B1B36FCF89734A598 /* RestorePurchasesController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RestorePurchasesController.swift; path = SwiftyStoreKit/RestorePurchasesController.swift; sourceTree = "<group>"; };
+		A85F8C89CC2FE5D425435C300BF696B9 /* SwiftyStoreKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyStoreKit-umbrella.h"; sourceTree = "<group>"; };
+		AC21F00D279DE486A81E7A9809E5C1FF /* SwiftyStoreKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyStoreKit-prefix.pch"; sourceTree = "<group>"; };
+		B721E2D7DCCBC006F7CF032C2CD7B6D9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B8889AAD0CFFD79D3C04C41C5275DF31 /* InAppProductQueryRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InAppProductQueryRequest.swift; path = SwiftyStoreKit/InAppProductQueryRequest.swift; sourceTree = "<group>"; };
+		B97195CFC8BEBAD5EDCA04F5344C3FFB /* Pods_PuzzleUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_PuzzleUITests.framework; path = "Pods-PuzzleUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9D95A5D64FECF83D4CF58FEAA0D09B4 /* Pods-Puzzle-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Puzzle-frameworks.sh"; sourceTree = "<group>"; };
+		BB1A9BC04C58B644FF110C5D74DC0976 /* OS.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OS.swift; path = SwiftyStoreKit/OS.swift; sourceTree = "<group>"; };
+		BC84CA3D52ADBA4CD797CC5AD12D2A3D /* Pods-PuzzleUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PuzzleUITests-dummy.m"; sourceTree = "<group>"; };
+		BD105220D63E47C139A629FE9498275B /* Pods-Puzzle-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Puzzle-acknowledgements.markdown"; sourceTree = "<group>"; };
+		C0071309C308CE147DC811F70FC02A3D /* SwiftyStoreKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SwiftyStoreKit.modulemap; sourceTree = "<group>"; };
+		C245CC097DF903B73F984A5390256F86 /* SwiftyStoreKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyStoreKit.xcconfig; sourceTree = "<group>"; };
+		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		D6F9FC3701650F5859A007AE92ECE515 /* SwiftyStoreKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyStoreKit.swift; path = SwiftyStoreKit/SwiftyStoreKit.swift; sourceTree = "<group>"; };
+		E372F858A09D43D16003E884D6965166 /* SwiftyStoreKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyStoreKit-dummy.m"; sourceTree = "<group>"; };
+		E3C75FF1522023680361F8972B812716 /* Pods-PuzzleTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PuzzleTests-resources.sh"; sourceTree = "<group>"; };
+		E92BD06C11E2636196D932E54883ED0F /* Pods-Puzzle-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Puzzle-dummy.m"; sourceTree = "<group>"; };
+		EAC40F6D34CF34014382C687D09DFB82 /* InAppReceiptRefreshRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InAppReceiptRefreshRequest.swift; path = SwiftyStoreKit/InAppReceiptRefreshRequest.swift; sourceTree = "<group>"; };
+		F785E2F5E0A81FEA055DEEADB167C251 /* Pods_Puzzle.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Puzzle.framework; path = "Pods-Puzzle.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA84A4FF0C7BC2A1C925525261447C13 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FFD84D1C77990AB1C3124CD9A3B7479B /* Pods_PuzzleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_PuzzleTests.framework; path = "Pods-PuzzleTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		938F7EE838922B55C22420D097520384 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9DCF7245E0862E5A5D95EB30230A8EB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA4DCE06864D6E9C54D59EAAD0DF045A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11A8295A71537182A56AA09FD68F2B72 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA268555C80CD03B36F86B83A00B898D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5FA27E8062F038059F62E58A8E254F5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAB950658BD1070803181B448C091BB8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4781D268F943D7A7BCD0ABD8D907326A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0DFA59CE46E313A6E29D0D808F3EBABC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F785E2F5E0A81FEA055DEEADB167C251 /* Pods_Puzzle.framework */,
+				FFD84D1C77990AB1C3124CD9A3B7479B /* Pods_PuzzleTests.framework */,
+				B97195CFC8BEBAD5EDCA04F5344C3FFB /* Pods_PuzzleUITests.framework */,
+				75661FAABF231A439C34F9787AE0F4BC /* SwiftyStoreKit.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1A94A0755EB5EA4C5DE24FE5ECD27F6C /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7A3D4CB6043AE778D69FF3593A7ECC57 /* Pods-Puzzle */,
+				67479F845730D1C8187005B86E487770 /* Pods-PuzzleTests */,
+				E690934EF1952B8D22CB227CFAAC97B3 /* Pods-PuzzleUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		67479F845730D1C8187005B86E487770 /* Pods-PuzzleTests */ = {
+			isa = PBXGroup;
+			children = (
+				FA84A4FF0C7BC2A1C925525261447C13 /* Info.plist */,
+				5777D7076AAEB978CE3B120BE9830C0B /* Pods-PuzzleTests.modulemap */,
+				641CB69EC8E2D4823EBF10B3D7A69FB7 /* Pods-PuzzleTests-acknowledgements.markdown */,
+				35420F0F3E197E3AFFB5412AF216C04F /* Pods-PuzzleTests-acknowledgements.plist */,
+				61650A059351273281DF9461584109E2 /* Pods-PuzzleTests-dummy.m */,
+				2ACFD85B3710DF859A8F35232A45F8CE /* Pods-PuzzleTests-frameworks.sh */,
+				E3C75FF1522023680361F8972B812716 /* Pods-PuzzleTests-resources.sh */,
+				4E18BAAA2423326BD72D80CC493589AC /* Pods-PuzzleTests-umbrella.h */,
+				362C3E089C67218E7B241AA6CEF11D04 /* Pods-PuzzleTests.debug.xcconfig */,
+				5363D8D3D9C24BAA2D2E959E62D74FFD /* Pods-PuzzleTests.release.xcconfig */,
+			);
+			name = "Pods-PuzzleTests";
+			path = "Target Support Files/Pods-PuzzleTests";
+			sourceTree = "<group>";
+		};
+		7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7A3D4CB6043AE778D69FF3593A7ECC57 /* Pods-Puzzle */ = {
+			isa = PBXGroup;
+			children = (
+				9F3A2744AD9E67B613A4AE0958B00039 /* Info.plist */,
+				563FEE32ACDECF77CF07DFAF237B1CC0 /* Pods-Puzzle.modulemap */,
+				BD105220D63E47C139A629FE9498275B /* Pods-Puzzle-acknowledgements.markdown */,
+				36628A081A3D86B42DF2BE40932D5D0A /* Pods-Puzzle-acknowledgements.plist */,
+				E92BD06C11E2636196D932E54883ED0F /* Pods-Puzzle-dummy.m */,
+				B9D95A5D64FECF83D4CF58FEAA0D09B4 /* Pods-Puzzle-frameworks.sh */,
+				86F7FADF8AAE8767CA8A5C5B5E47C9C3 /* Pods-Puzzle-resources.sh */,
+				37101DE5BD6D27D1F895E2277194A06C /* Pods-Puzzle-umbrella.h */,
+				47D32C9D3B59E1A2B09D96EEEEC017D5 /* Pods-Puzzle.debug.xcconfig */,
+				1708B34E965AE56E28C2B2A027404CE3 /* Pods-Puzzle.release.xcconfig */,
+			);
+			name = "Pods-Puzzle";
+			path = "Target Support Files/Pods-Puzzle";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				A95C1E89245F9E364B8084B388BFE038 /* Pods */,
+				0DFA59CE46E313A6E29D0D808F3EBABC /* Products */,
+				1A94A0755EB5EA4C5DE24FE5ECD27F6C /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		A95C1E89245F9E364B8084B388BFE038 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E3A56AFE316DA3D89770852C1AF41B79 /* SwiftyStoreKit */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A9898CDC718BAA81379C0A06A64C96B0 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				033CB19340B51696FC152EAF4D80AB8E /* Info.plist */,
+				C0071309C308CE147DC811F70FC02A3D /* SwiftyStoreKit.modulemap */,
+				C245CC097DF903B73F984A5390256F86 /* SwiftyStoreKit.xcconfig */,
+				E372F858A09D43D16003E884D6965166 /* SwiftyStoreKit-dummy.m */,
+				AC21F00D279DE486A81E7A9809E5C1FF /* SwiftyStoreKit-prefix.pch */,
+				A85F8C89CC2FE5D425435C300BF696B9 /* SwiftyStoreKit-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftyStoreKit";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E3A56AFE316DA3D89770852C1AF41B79 /* SwiftyStoreKit */ = {
+			isa = PBXGroup;
+			children = (
+				1968F40D7D4E28418E54A4CB37EBCCE3 /* AppleReceiptValidator.swift */,
+				1C0D417213DBBC4411A4154D7C651230 /* CompleteTransactionsController.swift */,
+				B8889AAD0CFFD79D3C04C41C5275DF31 /* InAppProductQueryRequest.swift */,
+				9E9ED36AFEEB1E03BBD6305217F6C316 /* InAppReceipt.swift */,
+				EAC40F6D34CF34014382C687D09DFB82 /* InAppReceiptRefreshRequest.swift */,
+				BB1A9BC04C58B644FF110C5D74DC0976 /* OS.swift */,
+				4150561CD837E1794B7B5FF56D353DBA /* PaymentQueueController.swift */,
+				8F6681C1FD0EE179B7D880A46762AB7E /* PaymentsController.swift */,
+				3DF9B0724332FCE0C1392F203F6E0598 /* ProductsInfoController.swift */,
+				A09E5AD3410F4E6B1B36FCF89734A598 /* RestorePurchasesController.swift */,
+				584377585B68A8124FA003F18C13BCEC /* SKProduct+LocalizedPrice.swift */,
+				D6F9FC3701650F5859A007AE92ECE515 /* SwiftyStoreKit.swift */,
+				828ED662D4314413AA1E6CAC762173AE /* SwiftyStoreKit+Types.swift */,
+				A9898CDC718BAA81379C0A06A64C96B0 /* Support Files */,
+			);
+			name = SwiftyStoreKit;
+			path = SwiftyStoreKit;
+			sourceTree = "<group>";
+		};
+		E690934EF1952B8D22CB227CFAAC97B3 /* Pods-PuzzleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B721E2D7DCCBC006F7CF032C2CD7B6D9 /* Info.plist */,
+				318C9A03EE311609CC05BC9FBE281A6E /* Pods-PuzzleUITests.modulemap */,
+				2292D2875ABB66B950045ECE1725EF19 /* Pods-PuzzleUITests-acknowledgements.markdown */,
+				45118D96DA2F7121387F4CF404FB3202 /* Pods-PuzzleUITests-acknowledgements.plist */,
+				BC84CA3D52ADBA4CD797CC5AD12D2A3D /* Pods-PuzzleUITests-dummy.m */,
+				00998C9C09C67D6A2D51166F153FB4AB /* Pods-PuzzleUITests-frameworks.sh */,
+				09F09E0966A13B5E50EE94D9189B0E13 /* Pods-PuzzleUITests-resources.sh */,
+				3A6C03E4B1F77EF062E068233C1FE824 /* Pods-PuzzleUITests-umbrella.h */,
+				36CAE54A2B3168986E84E44F724D0EEA /* Pods-PuzzleUITests.debug.xcconfig */,
+				76CAD1248CDF552E06B0F2F9718ACB00 /* Pods-PuzzleUITests.release.xcconfig */,
+			);
+			name = "Pods-PuzzleUITests";
+			path = "Target Support Files/Pods-PuzzleUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		47B4E461513822E04F2DD6C081916D48 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCC98E6F4D865329B9F97CF43C7B77CB /* SwiftyStoreKit-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C1ACEF9EE2F726B1D255CF0D33E8599 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69C00B73808EE8A7115231ECD8FA9C83 /* Pods-PuzzleUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96A43A9C6A609BF1E29F543E40BAABF6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0AFB259F312AD81723D2EED5D4AE951 /* Pods-Puzzle-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97F0B369FBE09C8842D045190259CB10 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43FA4A709C60DC60906EF79BB0610299 /* Pods-PuzzleTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		468BF10D975421F202B66245B6460D67 /* Pods-Puzzle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C6AFD7701FE8BD4858AC5445ABFD2A2E /* Build configuration list for PBXNativeTarget "Pods-Puzzle" */;
+			buildPhases = (
+				406EE0AD532B0B61BC92131C69F50DA1 /* Sources */,
+				CA4DCE06864D6E9C54D59EAAD0DF045A /* Frameworks */,
+				96A43A9C6A609BF1E29F543E40BAABF6 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7ACE62EFB7F3DE84505809C47F59772C /* PBXTargetDependency */,
+			);
+			name = "Pods-Puzzle";
+			productName = "Pods-Puzzle";
+			productReference = F785E2F5E0A81FEA055DEEADB167C251 /* Pods_Puzzle.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		896A537C74EDC671A9CBC725CF1B453D /* SwiftyStoreKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 32C5EAAA208ABD30B407203F2B410B03 /* Build configuration list for PBXNativeTarget "SwiftyStoreKit" */;
+			buildPhases = (
+				FEC629ADE7E8D794C8FF64A718562891 /* Sources */,
+				EAB950658BD1070803181B448C091BB8 /* Frameworks */,
+				47B4E461513822E04F2DD6C081916D48 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftyStoreKit;
+			productName = SwiftyStoreKit;
+			productReference = 75661FAABF231A439C34F9787AE0F4BC /* SwiftyStoreKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D23762C64744C694B0DE7BBDC20857BB /* Pods-PuzzleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 475733FFFF9E7CE2EEB9FBDDA0FD32D9 /* Build configuration list for PBXNativeTarget "Pods-PuzzleTests" */;
+			buildPhases = (
+				44A477A864D5E837BCD6E69CF631B34A /* Sources */,
+				938F7EE838922B55C22420D097520384 /* Frameworks */,
+				97F0B369FBE09C8842D045190259CB10 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-PuzzleTests";
+			productName = "Pods-PuzzleTests";
+			productReference = FFD84D1C77990AB1C3124CD9A3B7479B /* Pods_PuzzleTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D74C2A933716D64ECA3BB7AD6B30FF8F /* Pods-PuzzleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2817440C1237BE548B4163C27C533EFA /* Build configuration list for PBXNativeTarget "Pods-PuzzleUITests" */;
+			buildPhases = (
+				688B95F475A829FB288DB4A4335CC7D6 /* Sources */,
+				EA268555C80CD03B36F86B83A00B898D /* Frameworks */,
+				6C1ACEF9EE2F726B1D255CF0D33E8599 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-PuzzleUITests";
+			productName = "Pods-PuzzleUITests";
+			productReference = B97195CFC8BEBAD5EDCA04F5344C3FFB /* Pods_PuzzleUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 0DFA59CE46E313A6E29D0D808F3EBABC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				468BF10D975421F202B66245B6460D67 /* Pods-Puzzle */,
+				D23762C64744C694B0DE7BBDC20857BB /* Pods-PuzzleTests */,
+				D74C2A933716D64ECA3BB7AD6B30FF8F /* Pods-PuzzleUITests */,
+				896A537C74EDC671A9CBC725CF1B453D /* SwiftyStoreKit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		406EE0AD532B0B61BC92131C69F50DA1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BB74787FAB3A4E9C4EDD77D594E68DA /* Pods-Puzzle-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44A477A864D5E837BCD6E69CF631B34A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E0399CC340E1FEBA1AC89416D265C2D /* Pods-PuzzleTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		688B95F475A829FB288DB4A4335CC7D6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				166A506B877227A181738FD106129F2B /* Pods-PuzzleUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEC629ADE7E8D794C8FF64A718562891 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48AA10847E1C5A9B2CEDD80D9A4F351A /* AppleReceiptValidator.swift in Sources */,
+				AA678EB71883495B452ED9FDB8B3EA18 /* CompleteTransactionsController.swift in Sources */,
+				2993F9688BD0F13E089B6CE6FDEC0DA9 /* InAppProductQueryRequest.swift in Sources */,
+				E3783E2EB33AEBE8DA79F7CAB7D5FE0F /* InAppReceipt.swift in Sources */,
+				10CE8CC329D5DF4BC8E9E152D71EFEDD /* InAppReceiptRefreshRequest.swift in Sources */,
+				2BD6E9D83C48E829E80FD024FEF64B74 /* OS.swift in Sources */,
+				01A41FCDD8753D67376224A2C47E4C99 /* PaymentQueueController.swift in Sources */,
+				87B0975F3CCE8194A48F730CABFA88B3 /* PaymentsController.swift in Sources */,
+				3B742796926AAC948F25C9B6D27FC26D /* ProductsInfoController.swift in Sources */,
+				773675DC8A6601F4446D552A68B994FA /* RestorePurchasesController.swift in Sources */,
+				D5359B009A0005D3CF1EE841B7615E3E /* SKProduct+LocalizedPrice.swift in Sources */,
+				2B129AD89E56C4AB460E00D1EFAF77FB /* SwiftyStoreKit+Types.swift in Sources */,
+				38673872766C4B5CE0E7D7D03A66CF6A /* SwiftyStoreKit-dummy.m in Sources */,
+				E0A1EE7FAE6F775A2CE1548E5EDB5B2A /* SwiftyStoreKit.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7ACE62EFB7F3DE84505809C47F59772C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftyStoreKit;
+			target = 896A537C74EDC671A9CBC725CF1B453D /* SwiftyStoreKit */;
+			targetProxy = E1F21E02C7679A2BAEE491287609BD34 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0EA9A773F0E530611CF5DE79F4A9DC27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1708B34E965AE56E28C2B2A027404CE3 /* Pods-Puzzle.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Puzzle/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Puzzle/Pods-Puzzle.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Puzzle;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		156284431C64CB05C59BDA0595A1E95A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		340E4283B65A3F49FB8DE27BBABC00AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C245CC097DF903B73F984A5390256F86 /* SwiftyStoreKit.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyStoreKit/SwiftyStoreKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyStoreKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftyStoreKit/SwiftyStoreKit.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SwiftyStoreKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6D9B197B8C48742954CF26916894823F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 47D32C9D3B59E1A2B09D96EEEEC017D5 /* Pods-Puzzle.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Puzzle/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Puzzle/Pods-Puzzle.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Puzzle;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		884D4A9555420716B069B2680AD834FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 362C3E089C67218E7B241AA6CEF11D04 /* Pods-PuzzleTests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-PuzzleTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PuzzleTests/Pods-PuzzleTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_PuzzleTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9D0645D776F27FCA7ED2B59414DF810D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C245CC097DF903B73F984A5390256F86 /* SwiftyStoreKit.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyStoreKit/SwiftyStoreKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyStoreKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftyStoreKit/SwiftyStoreKit.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SwiftyStoreKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		BFC04FF86E170F1A4DF4803E434F25BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5363D8D3D9C24BAA2D2E959E62D74FFD /* Pods-PuzzleTests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-PuzzleTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PuzzleTests/Pods-PuzzleTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_PuzzleTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C382132BB6BF8CA1A911872A2062FD0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		C70151B4714DBA189CF253CF16C893B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 36CAE54A2B3168986E84E44F724D0EEA /* Pods-PuzzleUITests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-PuzzleUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PuzzleUITests/Pods-PuzzleUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_PuzzleUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F6365E60D975DC29FCDB58DE674B9B3B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 76CAD1248CDF552E06B0F2F9718ACB00 /* Pods-PuzzleUITests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-PuzzleUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PuzzleUITests/Pods-PuzzleUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_PuzzleUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2817440C1237BE548B4163C27C533EFA /* Build configuration list for PBXNativeTarget "Pods-PuzzleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C70151B4714DBA189CF253CF16C893B1 /* Debug */,
+				F6365E60D975DC29FCDB58DE674B9B3B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C382132BB6BF8CA1A911872A2062FD0D /* Debug */,
+				156284431C64CB05C59BDA0595A1E95A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		32C5EAAA208ABD30B407203F2B410B03 /* Build configuration list for PBXNativeTarget "SwiftyStoreKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				340E4283B65A3F49FB8DE27BBABC00AA /* Debug */,
+				9D0645D776F27FCA7ED2B59414DF810D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		475733FFFF9E7CE2EEB9FBDDA0FD32D9 /* Build configuration list for PBXNativeTarget "Pods-PuzzleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				884D4A9555420716B069B2680AD834FD /* Debug */,
+				BFC04FF86E170F1A4DF4803E434F25BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C6AFD7701FE8BD4858AC5445ABFD2A2E /* Build configuration list for PBXNativeTarget "Pods-Puzzle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D9B197B8C48742954CF26916894823F /* Debug */,
+				0EA9A773F0E530611CF5DE79F4A9DC27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
