@@ -13,6 +13,13 @@ class StageViewCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var view:UIView!
     @IBOutlet weak var lockImage:UIImageView!
     
+    var won:Bool!{
+        didSet{
+            self.number.textColor = UIColor.white
+            self.view.backgroundColor = won == true ? UIColor.played() : UIColor.play()
+        }
+    }
+    
     override func awakeFromNib() {
         self.backgroundColor = UIColor.backgrounds()
         view.layer.borderColor = UIColor.white.cgColor
@@ -25,30 +32,19 @@ class StageViewCollectionViewCell: UICollectionViewCell {
         lockImage.image = UIImage(named: "lock")
         lockImage.tintColor = UIColor.white
         
-        
-        
         number.textColor = UIColor.darkGray
         number.font = UIFont(name: "Arial Rounded MT Bold", size: 37)
-       addShadow()
+        
+        addShadow()
         
     }
+    
     override func prepareForReuse() {
-        
+        super.prepareForReuse()
         self.lockImage.isHidden = false
         self.number.isHidden = false
     }
-    func checkIfWon(won:Bool) {
-        if won {
-            self.view.backgroundColor = UIColor.played()
-            self.number.textColor = UIColor.white
-        }
-        else {
-            self.view.backgroundColor = UIColor.play()
-            self.number.textColor = UIColor.white
-
-        }
-        
-    }
+    
     func addShadow() {
         self.view.layer.masksToBounds = false
         self.view.clipsToBounds = false

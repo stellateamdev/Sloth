@@ -1,0 +1,11 @@
+/* 
+  Localizable.strings
+  Puzzle
+
+  Created by Nathakorn on 7/10/17.
+  Copyright © 2017 marky RE. All rights reserved.
+*/
+
+"1" = "In a digital clock, how many times will the digital clock display 3 or more of the same number in a row in 1 day? If the digital clock time shown is a 12-hour format, not 24 hours format.";
+"2" = "A and B have been assigned a 10 acre plot of land and split it in half so they can work independently. A can plow the land at a rate of 25 minutes per acre. B takes 50 minutes to plow, but sows seeds at four times the speed of A. If sowing seeds on the 10 acre plot pays $200, how much of that money should B get?";
+"3" = "The first letter of the alphabet is A, and the letter B comes after the letter A. So the question is, what's the last letter of the alphabet?.";

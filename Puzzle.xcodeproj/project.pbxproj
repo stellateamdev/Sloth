@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		5259EE1EA6F8B1C649117200 /* Pods_PuzzleUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC0DE456769B992A58675222 /* Pods_PuzzleUITests.framework */; };
+		8198667A1F12997300C53781 /* QuestionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 819866791F12997300C53781 /* QuestionViewModel.swift */; };
+		8198667E1F12AB7700C53781 /* Questions.strings in Resources */ = {isa = PBXBuildFile; fileRef = 819866801F12AB7700C53781 /* Questions.strings */; };
+		819866831F12AE1D00C53781 /* StageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 819866821F12AE1D00C53781 /* StageViewModel.swift */; };
+		819866851F12B24900C53781 /* InAppManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 819866841F12B24900C53781 /* InAppManager.swift */; };
 		9D6F48769567E5748A1EAF66 /* Pods_PuzzleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4E4A9ABDC2DE5DB9A67064E /* Pods_PuzzleTests.framework */; };
 		EF2307891EF2461E00E8855E /* ButtonEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2307881EF2461E00E8855E /* ButtonEx.swift */; };
 		EF23078B1EF2482600E8855E /* TextFieldEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF23078A1EF2482600E8855E /* TextFieldEx.swift */; };
@@ -58,6 +62,10 @@
 		4510DFE3B75A882197F359DA /* Pods-PuzzleUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PuzzleUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PuzzleUITests/Pods-PuzzleUITests.release.xcconfig"; sourceTree = "<group>"; };
 		760254C62C18143AB678E203 /* Pods-PuzzleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PuzzleTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PuzzleTests/Pods-PuzzleTests.release.xcconfig"; sourceTree = "<group>"; };
 		817B65A39F4616640BE2ED93 /* Pods-PuzzleUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PuzzleUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PuzzleUITests/Pods-PuzzleUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		819866791F12997300C53781 /* QuestionViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionViewModel.swift; sourceTree = "<group>"; };
+		8198667F1F12AB7700C53781 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Questions.strings; sourceTree = "<group>"; };
+		819866821F12AE1D00C53781 /* StageViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StageViewModel.swift; sourceTree = "<group>"; };
+		819866841F12B24900C53781 /* InAppManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InAppManager.swift; sourceTree = "<group>"; };
 		90B1A28E185E62CF4C246923 /* Pods_Puzzle.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Puzzle.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE9AB0E998C25DA39272D5D4 /* Pods-PuzzleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PuzzleTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PuzzleTests/Pods-PuzzleTests.debug.xcconfig"; sourceTree = "<group>"; };
 		EC0DE456769B992A58675222 /* Pods_PuzzleUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PuzzleUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -133,6 +141,66 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		819866741F1293DD00C53781 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				EFA681DF1EB8925A0046D0C2 /* AppDelegate.swift */,
+				819866841F12B24900C53781 /* InAppManager.swift */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		819866751F12991200C53781 /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				819866761F12992000C53781 /* Storyboard */,
+				8198667B1F12A51600C53781 /* View */,
+				819866781F12996300C53781 /* ViewModel */,
+				EFA6820D1EB8975B0046D0C2 /* StageView */,
+				EF2AA7391EDC2406003BF427 /* QuestionVIew */,
+			);
+			name = Interfaces;
+			sourceTree = "<group>";
+		};
+		819866761F12992000C53781 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				EFA681E31EB8925A0046D0C2 /* Main.storyboard */,
+				EFA681E81EB8925A0046D0C2 /* LaunchScreen.storyboard */,
+			);
+			name = Storyboard;
+			sourceTree = "<group>";
+		};
+		819866781F12996300C53781 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				819866791F12997300C53781 /* QuestionViewModel.swift */,
+				819866821F12AE1D00C53781 /* StageViewModel.swift */,
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		8198667B1F12A51600C53781 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EF2AA73A1EDC241A003BF427 /* Hint.xib */,
+				EF2AA73E1EDC2685003BF427 /* HintView.swift */,
+				EFFE531D1EDF48A100995ED9 /* Result.xib */,
+				EFFE531F1EDF497000995ED9 /* ResultView.swift */,
+				EF28C7881EE9182900E0FC4E /* Purchase.xib */,
+				EF28C78A1EE9595900E0FC4E /* PurchaseView.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		819866811F12ABD800C53781 /* QuestionString */ = {
+			isa = PBXGroup;
+			children = (
+				819866801F12AB7700C53781 /* Questions.strings */,
+			);
+			name = QuestionString;
+			sourceTree = "<group>";
+		};
 		B91BE38181387C2B9A81F1EC /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -162,12 +230,6 @@
 			isa = PBXGroup;
 			children = (
 				EFF58F4F1EB9A553009F076C /* QuestionViewController.swift */,
-				EF2AA73A1EDC241A003BF427 /* Hint.xib */,
-				EF2AA73E1EDC2685003BF427 /* HintView.swift */,
-				EFFE531D1EDF48A100995ED9 /* Result.xib */,
-				EFFE531F1EDF497000995ED9 /* ResultView.swift */,
-				EF28C7881EE9182900E0FC4E /* Purchase.xib */,
-				EF28C78A1EE9595900E0FC4E /* PurchaseView.swift */,
 			);
 			name = QuestionVIew;
 			sourceTree = "<group>";
@@ -197,14 +259,11 @@
 		EFA681DE1EB8925A0046D0C2 /* Puzzle */ = {
 			isa = PBXGroup;
 			children = (
+				819866741F1293DD00C53781 /* Core */,
 				EFCF433C1EDC556900F4504F /* Model */,
-				EF2AA7391EDC2406003BF427 /* QuestionVIew */,
+				819866751F12991200C53781 /* Interfaces */,
 				EF2AA7361EDC0BA0003BF427 /* Extension */,
-				EFA6820D1EB8975B0046D0C2 /* StageView */,
-				EFA681DF1EB8925A0046D0C2 /* AppDelegate.swift */,
-				EFA681E31EB8925A0046D0C2 /* Main.storyboard */,
 				EFA681E61EB8925A0046D0C2 /* Assets.xcassets */,
-				EFA681E81EB8925A0046D0C2 /* LaunchScreen.storyboard */,
 				EFA681EB1EB8925A0046D0C2 /* Info.plist */,
 			);
 			path = Puzzle;
@@ -240,6 +299,7 @@
 		EFCF433C1EDC556900F4504F /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				819866811F12ABD800C53781 /* QuestionString */,
 				EFCF433D1EDC557900F4504F /* Question.swift */,
 				EFCF433F1EDC568A00F4504F /* Questions.swift */,
 			);
@@ -368,6 +428,7 @@
 				EF2AA73B1EDC241A003BF427 /* Hint.xib in Resources */,
 				EFA681EA1EB8925A0046D0C2 /* LaunchScreen.storyboard in Resources */,
 				EFFE531E1EDF48A100995ED9 /* Result.xib in Resources */,
+				8198667E1F12AB7700C53781 /* Questions.strings in Resources */,
 				EFA681E71EB8925A0046D0C2 /* Assets.xcassets in Resources */,
 				EF28C7891EE9182900E0FC4E /* Purchase.xib in Resources */,
 				EFA681E51EB8925A0046D0C2 /* Main.storyboard in Resources */,
@@ -534,12 +595,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				EFA681E21EB8925A0046D0C2 /* StageViewController.swift in Sources */,
+				819866851F12B24900C53781 /* InAppManager.swift in Sources */,
 				EF2AA73F1EDC2685003BF427 /* HintView.swift in Sources */,
 				EF2307891EF2461E00E8855E /* ButtonEx.swift in Sources */,
 				EFFE53201EDF497000995ED9 /* ResultView.swift in Sources */,
 				EF28C78B1EE9595900E0FC4E /* PurchaseView.swift in Sources */,
 				EFA681E01EB8925A0046D0C2 /* AppDelegate.swift in Sources */,
 				EFF58F501EB9A553009F076C /* QuestionViewController.swift in Sources */,
+				8198667A1F12997300C53781 /* QuestionViewModel.swift in Sources */,
 				EF23078D1EF3DE6600E8855E /* LabelEx.swift in Sources */,
 				EFA6820F1EB898770046D0C2 /* StageViewCollectionViewCell.swift in Sources */,
 				EF5FBB611EEEC87200B4A80A /* ColorExt.swift in Sources */,
@@ -547,6 +610,7 @@
 				EFCF43401EDC568A00F4504F /* Questions.swift in Sources */,
 				EFCF433E1EDC557900F4504F /* Question.swift in Sources */,
 				EF2AA73D1EDC24D3003BF427 /* XibView.swift in Sources */,
+				819866831F12AE1D00C53781 /* StageViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -582,6 +646,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		819866801F12AB7700C53781 /* Questions.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8198667F1F12AB7700C53781 /* Base */,
+			);
+			name = Questions.strings;
+			sourceTree = "<group>";
+		};
 		EFA681E31EB8925A0046D0C2 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
