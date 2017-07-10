@@ -50,7 +50,7 @@ class StageViewModel: NSObject {
 // Animations Handling
 extension StageViewModel {
     
-    func showPurchase(){
+    func showPurchase() {
         UIView.animate(withDuration: 0.3,
                        delay: 0.0,
                        options: UIViewAnimationOptions.curveEaseIn,
