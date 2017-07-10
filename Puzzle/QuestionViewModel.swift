@@ -10,7 +10,6 @@ import Foundation
 import UIKit
 
 protocol QuestionViewModelDelegate: class {
-    func configureViewsWithFrame() -> CGRect
     func didAnswerCorrectly() -> Void
 }
 
@@ -22,14 +21,7 @@ class QuestionViewModel: NSObject {
     var questionNumValue:Int!
     var question:Question!
     
-    weak var delegate:QuestionViewModelDelegate?{
-        didSet{
-            guard let frame = self.delegate?.configureViewsWithFrame() else{
-                return
-            }
-            self.configureViews(frame)
-        }
-    }
+    weak var delegate:QuestionViewModelDelegate?
 
     func configureViews(_ frame:CGRect){
         

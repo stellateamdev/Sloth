@@ -156,8 +156,8 @@
 				819866761F12992000C53781 /* Storyboard */,
 				8198667B1F12A51600C53781 /* View */,
 				819866781F12996300C53781 /* ViewModel */,
-				EFA6820D1EB8975B0046D0C2 /* StageView */,
-				EF2AA7391EDC2406003BF427 /* QuestionVIew */,
+				EFA6820D1EB8975B0046D0C2 /* StageViewController */,
+				EF2AA7391EDC2406003BF427 /* QuestionVIewController */,
 			);
 			name = Interfaces;
 			sourceTree = "<group>";
@@ -226,12 +226,12 @@
 			name = Extension;
 			sourceTree = "<group>";
 		};
-		EF2AA7391EDC2406003BF427 /* QuestionVIew */ = {
+		EF2AA7391EDC2406003BF427 /* QuestionVIewController */ = {
 			isa = PBXGroup;
 			children = (
 				EFF58F4F1EB9A553009F076C /* QuestionViewController.swift */,
 			);
-			name = QuestionVIew;
+			name = QuestionVIewController;
 			sourceTree = "<group>";
 		};
 		EFA681D31EB8925A0046D0C2 = {
@@ -261,8 +261,8 @@
 			children = (
 				819866741F1293DD00C53781 /* Core */,
 				EFCF433C1EDC556900F4504F /* Model */,
-				819866751F12991200C53781 /* Interfaces */,
 				EF2AA7361EDC0BA0003BF427 /* Extension */,
+				819866751F12991200C53781 /* Interfaces */,
 				EFA681E61EB8925A0046D0C2 /* Assets.xcassets */,
 				EFA681EB1EB8925A0046D0C2 /* Info.plist */,
 			);
@@ -287,13 +287,13 @@
 			path = PuzzleUITests;
 			sourceTree = "<group>";
 		};
-		EFA6820D1EB8975B0046D0C2 /* StageView */ = {
+		EFA6820D1EB8975B0046D0C2 /* StageViewController */ = {
 			isa = PBXGroup;
 			children = (
 				EFA681E11EB8925A0046D0C2 /* StageViewController.swift */,
 				EFA6820E1EB898770046D0C2 /* StageViewCollectionViewCell.swift */,
 			);
-			name = StageView;
+			name = StageViewController;
 			sourceTree = "<group>";
 		};
 		EFCF433C1EDC556900F4504F /* Model */ = {
@@ -385,6 +385,11 @@
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = 877839YT4B;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.InAppPurchase = {
+								enabled = 0;
+							};
+						};
 					};
 					EFA681EF1EB8925A0046D0C2 = {
 						CreatedOnToolsVersion = 8.3.2;

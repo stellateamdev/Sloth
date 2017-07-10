@@ -109,10 +109,6 @@ extension QuestionViewController:UITextFieldDelegate{
 
 extension QuestionViewController:QuestionViewModelDelegate {
     
-    func configureViewsWithFrame() -> CGRect {
-        return self.view.frame
-    }
-    
     func didAnswerCorrectly() {
         self.navigationController?.popViewController(animated: true)
     }

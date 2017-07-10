@@ -9,25 +9,12 @@
 import Foundation
 import UIKit
 
-protocol StageViewModelDelegate: class {
-    func configureViewsWithFrame() -> CGRect
-}
-
 class StageViewModel: NSObject {
     
     var purchaseView:PurchaseView!
     var greyView = UIView()
     var questionArray:[Question] = QuestionsManager.sharedInstance.questions
     var isLock = true
-    
-    weak var delegate:StageViewModelDelegate?{
-        didSet{
-            guard let frame = self.delegate?.configureViewsWithFrame() else{
-                return
-            }
-            self.configureViews(frame)
-        }
-    }
     
     override init() {
         super.init()

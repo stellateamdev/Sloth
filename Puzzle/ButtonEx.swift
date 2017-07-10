@@ -10,6 +10,7 @@ import Foundation
 import UIKit
 
 extension UIButton {
+    
     func addShadow() {
         self.layer.masksToBounds = false
         self.clipsToBounds = false
@@ -21,6 +22,7 @@ extension UIButton {
         self.layer.shadowPath =  UIBezierPath(roundedRect: self.bounds, cornerRadius: 10).cgPath
         self.layer.shouldRasterize = false
     }
+    
     func addBackShadow() {
         self.layer.masksToBounds = false
         self.clipsToBounds = false

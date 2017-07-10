@@ -25,7 +25,7 @@ class StageViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.viewModel.delegate = self
+        self.viewModel.configureViews(self.view.frame)
         
         prepareViewDidLoad()
 
@@ -82,11 +82,5 @@ extension StageViewController: UICollectionViewDelegate {
             view.viewModel.questionNumValue = indexPath.row+1
             self.navigationController?.pushViewController(view, animated: true)
         }
-    }
-}
-
-extension StageViewController: StageViewModelDelegate {
-    func configureViewsWithFrame() -> CGRect {
-        return self.view.frame
     }
 }
