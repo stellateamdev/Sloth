@@ -16,13 +16,13 @@ class PurchaseView: UIView {
         message.text = "Buy to unlock all puzzles"
         
         buy.setTitle("Buy for 9 Baht", for: .normal)
-        buy.setTitleColor(UIColor.black, for: .normal)
-        buy.backgroundColor = UIColor.lightGray
+        buy.setTitleColor(UIColor.white, for: .normal)
+        buy.backgroundColor = UIColor.black
         buy.layer.cornerRadius = 5.0
         
         restore.setTitle("Restore Purchase", for: .normal)
-        restore.setTitleColor(UIColor.black, for: .normal)
-        restore.backgroundColor = UIColor.lightGray
+        restore.setTitleColor(UIColor.white, for: .normal)
+        restore.backgroundColor = UIColor.black
         restore.layer.cornerRadius = 5.0
         
     }

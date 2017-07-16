@@ -15,6 +15,7 @@ class QuestionViewController: UIViewController {
     @IBOutlet weak var questionText:UITextView!
     @IBOutlet weak var answer:UITextField!
     @IBOutlet weak var hint:UIButton!
+    @IBOutlet weak var result:ResultView!
     @IBOutlet weak var questionLabel:UILabel!
     
     let viewModel:QuestionViewModel! =  QuestionViewModel()
@@ -65,6 +66,7 @@ extension QuestionViewController{
         
         backButton.tintColor = UIColor.play()
         
+        
         questionLabel.sizeToFit()
         
         answer.layer.borderColor = UIColor(red: 87/255, green: 121/255, blue: 161/255, alpha: 1).cgColor
@@ -73,7 +75,7 @@ extension QuestionViewController{
         answer.addShadow()
         
         questionNum.attributedText = questionNum.createOutLine(name: "\(viewModel.questionNumValue!)")
-        questionNum.font = UIFont(name: "Arial Rounded MT Bold", size: 45)
+        questionNum.font = UIFont(name: "Arial Rounded MT Bold", size: 55)
         
         hint.backgroundColor = UIColor.play()
         hint.layer.borderWidth = 2
@@ -82,7 +84,6 @@ extension QuestionViewController{
         hint.setTitleColor(UIColor.white, for: .normal)
         hint.layer.cornerRadius = 5.0
         hint.layer.shouldRasterize = false
-        
         self.view.addSubview(viewModel.greyView)
         self.view.addSubview(viewModel.hintView)
         self.view.addSubview(viewModel.resultView)

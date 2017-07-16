@@ -14,5 +14,6 @@ class HintView: UIView {
     override func awakeFromNib() {
         hintTextView.isScrollEnabled = false
         hintTextView.isEditable = false
+        close.tintColor = UIColor.black
     }
 }

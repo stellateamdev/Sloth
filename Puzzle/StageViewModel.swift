@@ -14,7 +14,7 @@ class StageViewModel: NSObject {
     var purchaseView:PurchaseView!
     var greyView = UIView()
     var questionArray:[Question] = QuestionsManager.sharedInstance.questions
-    var isLock = true
+    var isLock = false
     
     override init() {
         super.init()

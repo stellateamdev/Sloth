@@ -26,19 +26,21 @@ class QuestionViewModel: NSObject {
     func configureViews(_ frame:CGRect){
         
         greyView.frame = frame
-        greyView.backgroundColor = UIColor.darkGray
+        greyView.backgroundColor = UIColor.black
         greyView.alpha = 0.0
         greyView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(closeHint)))
         
         hintView =  XibView.instanceFromNib(name: "Hint") as! HintView
         hintView.frame.origin = CGPoint(x: frame.midX-125, y: frame.midY-125)
-        hintView.layer.cornerRadius = 10
+        hintView.layer.borderColor = UIColor.played().cgColor
+        hintView.layer.borderWidth = 0.0
+        hintView.layer.cornerRadius = 18
         hintView.alpha = 0.0
         hintView.close.addTarget(self, action: #selector(closeHint), for: .touchUpInside)
         hintView.hintTextView.text = self.question.hint
         
         resultView =  XibView.instanceFromNib(name: "Result") as! ResultView
-        resultView.frame.origin = CGPoint(x: frame.midX-125, y: frame.midY-125)
+        resultView.frame.origin = CGPoint(x: frame.midX-135, y: frame.midY-62.5)
         resultView.layer.cornerRadius = 10
         resultView.alpha = 0.0
         resultView.layer.borderColor = UIColor.black.cgColor
@@ -97,6 +99,7 @@ extension QuestionViewModel {
     }
     
     func closeHint() {
+        if self.resultView.alpha != 1.0 {
         UIView.animate(withDuration: 0.3,
                        delay: 0.0,
                        options: UIViewAnimationOptions.curveEaseIn,
@@ -107,9 +110,11 @@ extension QuestionViewModel {
             self.hintView.alpha = 0.0
             self.greyView.alpha = 0.0
         })
+        }
     }
     
     func showResult(){
+        
         UIView.animate(withDuration: 0.3,
                        delay: 0.0,
                        options: UIViewAnimationOptions.curveEaseIn,
