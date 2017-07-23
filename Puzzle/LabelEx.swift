@@ -10,12 +10,12 @@ import Foundation
 import UIKit
 
 extension UILabel {
-    func createOutLine(name:String) -> NSMutableAttributedString {
+    func createOutLine(name:String,size:Int,width:Double,color:UIColor) -> NSMutableAttributedString {
         let strokeTextAttributes = [
-            NSStrokeColorAttributeName : UIColor.played(),
+            NSStrokeColorAttributeName : color,
             NSForegroundColorAttributeName : UIColor.white,
-            NSStrokeWidthAttributeName : -2.5,
-            NSFontAttributeName : UIFont.boldSystemFont(ofSize: 30)
+            NSStrokeWidthAttributeName : -width,
+            NSFontAttributeName : UIFont.boldSystemFont(ofSize: CGFloat(size))
             ] as [String : Any]
         return NSMutableAttributedString(string: name, attributes: strokeTextAttributes)
 

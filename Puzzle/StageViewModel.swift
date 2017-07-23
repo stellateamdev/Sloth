@@ -31,7 +31,7 @@ class StageViewModel: NSObject {
         purchaseView.buy.addTarget(self, action: #selector(purchaseProduct), for: .touchUpInside)
         purchaseView.restore.addTarget(self, action: #selector(restorePurchase), for: .touchUpInside)
         
-        greyView.frame = frame
+        greyView.frame = CGRect(x: frame.origin.x, y: frame.origin.y, width: frame.size.width, height: frame.size.height+250)
         greyView.backgroundColor = UIColor.darkGray
         greyView.alpha = 0.0
         greyView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(closePurchase)))

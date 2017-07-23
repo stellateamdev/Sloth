@@ -10,6 +10,8 @@ import Foundation
 import UIKit
 
 extension UITextField {
+    
+    
     func addShadow() {
         self.layer.masksToBounds = false
         self.clipsToBounds = false
@@ -21,5 +23,21 @@ extension UITextField {
         self.layer.shadowPath =  UIBezierPath(roundedRect: self.bounds, cornerRadius: 10).cgPath
         self.layer.shouldRasterize = false
         
+    }
+    
+    
+     func textRectForBounds(bounds: CGRect) -> CGRect {
+        let padding = UIEdgeInsets(top: 0, left: 5, bottom: 0, right: 5)
+        return UIEdgeInsetsInsetRect(bounds, padding)
+    }
+    
+    func placeholderRectForBounds(bounds: CGRect) -> CGRect {
+        let padding = UIEdgeInsets(top: 0, left: 5, bottom: 0, right: 5)
+        return UIEdgeInsetsInsetRect(bounds, padding)
+    }
+    
+    func editingRectForBounds(bounds: CGRect) -> CGRect {
+        let padding = UIEdgeInsets(top: 0, left: 5, bottom: 0, right: 5)
+        return UIEdgeInsetsInsetRect(bounds, padding)
     }
 }

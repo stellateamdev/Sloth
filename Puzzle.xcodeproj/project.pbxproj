@@ -23,6 +23,7 @@
 		EF2AA73F1EDC2685003BF427 /* HintView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2AA73E1EDC2685003BF427 /* HintView.swift */; };
 		EF5FBB611EEEC87200B4A80A /* ColorExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5FBB601EEEC87200B4A80A /* ColorExt.swift */; };
 		EF83E5311EEA5B82004F2299 /* SwiftyStoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF83E5301EEA5B82004F2299 /* SwiftyStoreKit.framework */; };
+		EFA06F9C1F25024A00CC5D01 /* TextViewEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA06F9B1F25024A00CC5D01 /* TextViewEx.swift */; };
 		EFA681E01EB8925A0046D0C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA681DF1EB8925A0046D0C2 /* AppDelegate.swift */; };
 		EFA681E21EB8925A0046D0C2 /* StageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA681E11EB8925A0046D0C2 /* StageViewController.swift */; };
 		EFA681E51EB8925A0046D0C2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFA681E31EB8925A0046D0C2 /* Main.storyboard */; };
@@ -79,6 +80,7 @@
 		EF2AA73E1EDC2685003BF427 /* HintView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HintView.swift; sourceTree = "<group>"; };
 		EF5FBB601EEEC87200B4A80A /* ColorExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorExt.swift; sourceTree = "<group>"; };
 		EF83E5301EEA5B82004F2299 /* SwiftyStoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyStoreKit.framework; path = "../../Library/Developer/Xcode/DerivedData/Puzzle-dcdmkoygxhspabbhecczknznmfsl/Build/Products/Debug-iphonesimulator/SwiftyStoreKit/SwiftyStoreKit.framework"; sourceTree = "<group>"; };
+		EFA06F9B1F25024A00CC5D01 /* TextViewEx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextViewEx.swift; sourceTree = "<group>"; };
 		EFA681DC1EB8925A0046D0C2 /* Puzzle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Puzzle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFA681DF1EB8925A0046D0C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EFA681E11EB8925A0046D0C2 /* StageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StageViewController.swift; sourceTree = "<group>"; };
@@ -222,6 +224,7 @@
 				EF2307881EF2461E00E8855E /* ButtonEx.swift */,
 				EF23078A1EF2482600E8855E /* TextFieldEx.swift */,
 				EF23078C1EF3DE6600E8855E /* LabelEx.swift */,
+				EFA06F9B1F25024A00CC5D01 /* TextViewEx.swift */,
 			);
 			name = Extension;
 			sourceTree = "<group>";
@@ -609,6 +612,7 @@
 				EFF58F501EB9A553009F076C /* QuestionViewController.swift in Sources */,
 				8198667A1F12997300C53781 /* QuestionViewModel.swift in Sources */,
 				EF23078D1EF3DE6600E8855E /* LabelEx.swift in Sources */,
+				EFA06F9C1F25024A00CC5D01 /* TextViewEx.swift in Sources */,
 				EFA6820F1EB898770046D0C2 /* StageViewCollectionViewCell.swift in Sources */,
 				EF5FBB611EEEC87200B4A80A /* ColorExt.swift in Sources */,
 				EF23078B1EF2482600E8855E /* TextFieldEx.swift in Sources */,

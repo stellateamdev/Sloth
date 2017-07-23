@@ -25,7 +25,7 @@ class QuestionViewModel: NSObject {
 
     func configureViews(_ frame:CGRect){
         
-        greyView.frame = frame
+        greyView.frame = CGRect(x: frame.origin.x, y: frame.origin.y, width: frame.size.width, height: frame.size.height+250)
         greyView.backgroundColor = UIColor.black
         greyView.alpha = 0.0
         greyView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(closeHint)))

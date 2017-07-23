@@ -54,7 +54,7 @@ class StageViewController: UIViewController {
         collectionView.delegate = self
         collectionView.dataSource = self.viewModel
         
-        titleLabel.attributedText = titleLabel.createOutLine(name: "Sloth")
+        titleLabel.attributedText = titleLabel.createOutLine(name: "Sloth", size: 30, width: 2.5, color: UIColor.played())
         titleLabel.font = UIFont(name: "Arial Rounded MT Bold", size: 56)
         titleLabel.textColor = UIColor.white
         

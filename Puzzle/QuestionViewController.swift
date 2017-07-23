@@ -7,9 +7,10 @@
 //
 
 import UIKit
-
+import TPKeyboardAvoiding
 class QuestionViewController: UIViewController {
     
+    @IBOutlet weak var kasv:TPKeyboardAvoidingScrollView!
     @IBOutlet weak var backButton:UIButton!
     @IBOutlet weak var questionNum:UILabel!
     @IBOutlet weak var questionText:UITextView!
@@ -30,11 +31,14 @@ class QuestionViewController: UIViewController {
         
         answer.delegate = self
         answer.returnKeyType = .go
+        answer.backgroundColor = UIColor.white
         
-        questionText.text = viewModel.question.question
+        questionText.attributedText = questionText.createOutLine(name: viewModel.question.question)
         questionText.font = UIFont(name: "Arial Rounded MT Bold" ,size: 20)
+        questionText.textAlignment = .center
         questionText.isHidden = true
-        questionLabel.text = viewModel.question.question
+        questionLabel.attributedText = questionLabel.createOutLine(name: viewModel.question.question,size:22, width: 0.3, color: UIColor.black)
+        //questionLabel.text = viewModel.question.question
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -61,20 +65,20 @@ class QuestionViewController: UIViewController {
 extension QuestionViewController{
     
     func prepareViewWillAppear() {
-        
-        self.viewModel.configureViews(self.view.frame)
+        self.viewModel.configureViews(CGRect(origin: CGPoint(x: 0, y: 0)   , size: self.view.frame.size))
         
         backButton.tintColor = UIColor.play()
         
         
         questionLabel.sizeToFit()
         
-        answer.layer.borderColor = UIColor(red: 87/255, green: 121/255, blue: 161/255, alpha: 1).cgColor
-        answer.layer.borderWidth = 2
+        //answer.layer.borderColor = UIColor(red: 87/255, green: 121/255, blue: 161/255, alpha: 1).cgColor
+        //answer.layer.borderWidth = 2
         answer.layer.cornerRadius = 5.0
+        answer.layer.sublayerTransform = CATransform3DMakeTranslation(5, 0, 0)
         answer.addShadow()
         
-        questionNum.attributedText = questionNum.createOutLine(name: "\(viewModel.questionNumValue!)")
+        questionNum.attributedText = questionNum.createOutLine(name: "\(viewModel.questionNumValue!)", size: 30, width: 2.5, color: UIColor.played())
         questionNum.font = UIFont(name: "Arial Rounded MT Bold", size: 55)
         
         hint.backgroundColor = UIColor.play()
